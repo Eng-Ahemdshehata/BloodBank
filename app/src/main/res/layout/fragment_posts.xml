@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="0dp"
+    android:paddingTop="@dimen/dim_6dp"
+    android:paddingStart="@dimen/dim_6dp"
+    android:paddingEnd="@dimen/dim_6dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/dim_6dp"
+        android:background="@drawable/background_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_30dp">
+
+        <Spinner
+            android:id="@+id/posts_fragment_spin_categy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/posts_fragment_et_filter_name"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/txt_14sp"
+                android:hint="@string/enter_search_name_here"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textAutoComplete"/>
+
+            <ImageView
+                android:id="@+id/posts_fragment_iv_make_filter"
+                android:foreground="?selectableItemBackground"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="@dimen/dim_50dp"
+                android:layout_height="@dimen/dim_50dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_search"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/posts_fragment_rv_posts"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <ProgressBar
+           android:id="@+id/posts_fragment_pb_indicator"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

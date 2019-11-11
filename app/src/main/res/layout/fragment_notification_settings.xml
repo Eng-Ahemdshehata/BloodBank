@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:padding="@dimen/dim_12dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fake_text_2"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:layout_marginBottom="@dimen/dim_12dp"
+            />
+
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:padding="@dimen/dim_12dp"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/blood_type"/>
+
+        <LinearLayout
+            android:background="@drawable/background_details"
+            android:layout_marginBottom="@dimen/dim_12dp"
+            android:padding="@dimen/dim_12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    style="@style/CheckboxTheme"
+                    android:layout_height="match_parent"
+                    android:text="@string/a" />
+                <CheckBox
+
+                    style="@style/CheckboxTheme"
+                    android:text="@string/minus_a"/>
+                <CheckBox
+                    style="@style/CheckboxTheme"
+                    android:text="@string/o"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    style="@style/CheckboxTheme"
+
+                    android:text="@string/minus_o"/>
+                <CheckBox
+                    style="@style/CheckboxTheme"
+                    android:text="@string/ab"/>
+                <CheckBox
+                    style="@style/CheckboxTheme"
+                    android:text="@string/minus_ab"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:padding="@dimen/dim_12dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/governorates"/>
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/dim_12dp"
+            android:background="@drawable/background_details"
+            android:padding="@dimen/dim_12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    style="@style/CheckboxTheme"
+                    android:text="@string/garbia"/>
+                <CheckBox
+                    style="@style/CheckboxTheme"
+                    android:text="@string/dakahlia"
+                    tools:ignore="HardcodedText" />
+                <CheckBox
+                    style="@style/CheckboxTheme"
+                    android:text="@string/mania"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    style="@style/CheckboxTheme"
+
+                    android:text="@string/elshikh"/>
+                <CheckBox
+                    style="@style/CheckboxTheme"
+                    android:text="@string/cairo"/>
+                <CheckBox
+                    style="@style/CheckboxTheme"
+                    android:text="@string/sharquia"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/create_account_fragment_btn_create"
+            style="@style/LoginFragmentBtn"
+            android:background="@color/colorAccent"
+            android:text="@string/save" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

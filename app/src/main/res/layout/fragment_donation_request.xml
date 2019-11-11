@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/splash"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:padding="@dimen/dim_12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/donation_request_fragment_et_name"
+                style="@style/LoginFragmentET"
+                android:hint="@string/name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/donation_request_fragment_et_age"
+                style="@style/LoginFragmentET"
+                android:hint="@string/age"
+                android:inputType="numberDecimal" />
+
+
+            <Spinner
+                android:id="@+id/donation_request_fragment_spin_blood_type"
+                style="@style/LoginFragmentET"
+                android:hint="@string/blood_type"
+                android:inputType="number" />
+
+
+            <EditText
+                android:id="@+id/donation_request_fragment_et_bags_num"
+                style="@style/LoginFragmentET"
+                android:hint="@string/bag_number"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/donation_request_fragment_et_hospital_name"
+                style="@style/LoginFragmentET"
+                android:hint="@string/an_hospital"
+                android:inputType="textAutoComplete" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:padding="@dimen/dim_12dp"
+                    android:id="@+id/donation_request_fragment_et_location_address"
+                    style="@style/LoginFragmentET"
+                    android:textColor="@color/colorAccent"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:hint="@string/hospital_address"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/donation_request_fragment_iv_location"
+                    android:layout_marginStart="@dimen/dim_12dp"
+                    style="@style/LoginFragmentET"
+                    android:src="@drawable/ic_location"
+                    android:layout_width="@dimen/dim_40dp"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/donation_request_fragment_spin_governorate"
+                style="@style/LoginFragmentET"
+                android:hint="@string/governorates"
+                />
+
+            <Spinner
+                android:id="@+id/donation_request_fragment_spin_city"
+                style="@style/LoginFragmentET"
+                android:hint="@string/city"
+                />
+
+            <EditText
+                android:id="@+id/donation_request_fragment_et_phone"
+                style="@style/LoginFragmentET"
+                android:hint="@string/phone_number"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/donation_request_fragment_et_notes"
+                style="@style/LoginFragmentET"
+                android:hint="@string/notes"
+                android:inputType="textImeMultiLine" />
+
+            <Button
+                android:id="@+id/donation_request_fragment_btn_send"
+                style="@style/LoginFragmentBtn"
+                android:background="@color/colorAccent"
+                android:text="@string/send_request" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

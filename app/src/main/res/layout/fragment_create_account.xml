@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/splash"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/user_cycle_activity_fl_head"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_fl_height">
+            <TextView
+                android:layout_marginBottom="@dimen/dim_12dp"
+                android:textSize="@dimen/txt_size"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:text="@string/create_a_new_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+        <LinearLayout
+            android:padding="@dimen/dim_12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/create_account_fragment_et_name"
+            style="@style/LoginFragmentET"
+            android:hint="@string/name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/create_account_fragment_et_mail"
+            style="@style/LoginFragmentET"
+            android:hint="@string/e_mail"
+            android:inputType="textEmailAddress" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                style="@style/LoginFragmentET"
+                android:orientation="horizontal"
+                android:id="@+id/create_account_fragment_et_birth_date"
+                >
+                <TextView
+                    android:id="@+id/create_account_fragment_tv_birth_date_txt"
+                    android:textSize="@dimen/dim_16sp"
+                    android:gravity="center|start"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorAccent"
+                    android:text="@string/birth_date"
+
+                    />
+                <ImageView
+                    android:layout_width="@dimen/dim_30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/date"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/dim_12dp"
+                style="@style/LoginFragmentET"
+                android:orientation="horizontal"
+                android:id="@+id/create_account_fragment_et_the_latest_date_of_donation"
+                >
+                <TextView
+                    android:id="@+id/create_account_fragment_tv_latest_date_of_donation_txt"
+                    android:textSize="@dimen/dim_16sp"
+                    android:gravity="center|start"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorAccent"
+                    android:text="@string/the_latest_date_of_donation"
+
+                    />
+                <ImageView
+                    android:layout_width="@dimen/dim_30dp"
+                    android:layout_height="@dimen/dim_30dp"
+                    android:src="@drawable/date"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/create_account_fragment_spin_blood_type"
+            style="@style/LoginFragmentET"
+            android:hint="@string/blood_type"
+            android:inputType="number" />
+
+
+        <Spinner
+            android:id="@+id/create_account_fragment_spin_governorate"
+            style="@style/LoginFragmentET"
+            android:hint="@string/governorates"
+           />
+
+        <Spinner
+            android:id="@+id/create_account_fragment_spin_city"
+            style="@style/LoginFragmentET"
+            android:hint="@string/city"
+             />
+
+        <EditText
+            android:id="@+id/create_account_fragment_et_phone"
+            style="@style/LoginFragmentET"
+            android:hint="@string/phone_number"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/create_account_fragment_et_password"
+            style="@style/LoginFragmentET"
+            android:hint="@string/password"
+            android:inputType="numberPassword" />
+
+        <EditText
+            android:id="@+id/create_account_fragment_et_password_confirm"
+            style="@style/LoginFragmentET"
+            android:hint="@string/confirm_password"
+            android:inputType="numberPassword" />
+        <Button
+            android:id="@+id/create_account_fragment_btn_create"
+            style="@style/LoginFragmentBtn"
+            android:background="@color/colorAccent"
+            android:text="@string/sign_up" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

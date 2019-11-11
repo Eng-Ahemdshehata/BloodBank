@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.HomeCycleActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/dim_4dp"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/dim_4dp">
+
+                <ImageView
+                    android:id="@+id/home_activity_iv_open_drawer"
+                    android:layout_width="@dimen/dim_20dp"
+                    android:layout_height="@dimen/dim_20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="@dimen/dim_4dp"
+                    android:padding="@dimen/dim_6dp"
+                    android:foreground="?selectableItemBackground"
+                    android:background="@drawable/ic_drawer" />
+
+                <RelativeLayout
+                    android:layout_marginEnd="@dimen/dim_8dp"
+                    android:layout_width="@dimen/dim_30dp"
+                    android:foreground="?selectableItemBackground"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="@dimen/dim_30dp">
+                    <ImageView
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/home_activity_iv_notification"
+                        android:layout_width="@dimen/dim_30dp"
+                        android:layout_height="@dimen/dim_30dp"
+                        android:src="@drawable/ic_notification" />
+
+                    <TextView
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="@dimen/txt_14sp"
+                        android:id="@+id/home_activity_tv_notification_count"
+                        android:layout_width="@dimen/dim_20dp"
+                        android:layout_height="@dimen/dim_20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="2dp"
+                        android:background="@drawable/background_ll"
+                        android:backgroundTint="@color/colorRed" />
+
+                </RelativeLayout>
+                <ImageView
+                    android:foreground="?selectableItemBackground"
+                    android:visibility="gone"
+                    android:id="@+id/home_activity_iv_back"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="@dimen/dim_4dp"
+                    android:src="@drawable/ic_back" />
+
+                <TextView
+                    android:textSize="@dimen/dim_16sp"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/home_activity_tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Test here"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <include
+        layout="@layout/content_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appBarLayout" />
+
+</RelativeLayout>

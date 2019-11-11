@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:padding="@dimen/dim_12dp"
+        android:id="@+id/login_fragment_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:padding="@dimen/dim_20dp"
+            android:id="@+id/user_cycle_activity_im_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/login_fragment_et_phone_number"
+            style="@style/LoginFragmentET"
+            android:hint="@string/phone_number"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/login_fragment_et_password"
+            style="@style/LoginFragmentET"
+            android:hint="@string/password"
+            android:inputType="numberPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dim_16sp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/login_fragment_cb_remember_me"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorBlue"
+                android:checked="true"
+                android:text="@string/remember_me"
+                android:textColor="@color/colorAccent" />
+
+            />
+
+            <ImageView
+                android:layout_width="@dimen/dim_18dp"
+                android:layout_height="@dimen/dim_18dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/dim_6dp"
+                android:src="@drawable/warn" />
+
+            <TextView
+                android:id="@+id/login_fragment_tv_forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|end"
+                android:foreground="?selectableItemBackground"
+                android:text="@string/did_you_forget_the_password"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login_fragment_btn_login"
+            style="@style/LoginFragmentBtn"
+            android:backgroundTint="@color/colorGreen"
+            android:text="@string/login" />
+
+        <Button
+            android:id="@+id/login_fragment_btn_create_account"
+            style="@style/LoginFragmentBtn"
+            android:backgroundTint="@color/colorBlue"
+            android:text="@string/create_a_new_account" />
+
+
+    </LinearLayout>
+
+</ScrollView>

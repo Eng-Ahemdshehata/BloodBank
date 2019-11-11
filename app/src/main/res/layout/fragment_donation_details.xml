@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+<LinearLayout android:background="@color/colorWhite"
+
+    android:orientation="vertical"
+    android:padding="@dimen/dim_12dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_space"/>
+    <LinearLayout
+        style="@style/DonationDetailsLinearLayout"
+        >
+        <TextView
+            android:layout_marginEnd="@dimen/dim_12dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txt_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"/>
+
+        <TextView
+            android:id="@+id/donation_details_fragment_tv_name"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txt_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="ahmed hamdy"/>
+
+    </LinearLayout>
+    <include layout="@layout/view_space"/>
+
+    <LinearLayout
+        style="@style/DonationDetailsLinearLayout"
+
+        >
+        <TextView
+            android:layout_marginEnd="@dimen/dim_12dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txt_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/age"/>
+
+        <TextView
+            android:id="@+id/donation_details_fragment_tv_age"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txt_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="ahmed hamdy"/>
+
+    </LinearLayout>
+    <include layout="@layout/view_space"/>
+
+    <LinearLayout
+        style="@style/DonationDetailsLinearLayout"
+
+        >
+        <TextView
+            android:layout_marginEnd="@dimen/dim_12dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txt_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blood_type"/>
+
+        <TextView
+            android:id="@+id/donation_details_fragment_tv_blood_type"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txt_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="ahmed hamdy"/>
+
+    </LinearLayout>
+    <include layout="@layout/view_space"/>
+
+
+    <LinearLayout
+        style="@style/DonationDetailsLinearLayout"
+
+        >
+        <TextView
+            android:layout_marginEnd="@dimen/dim_12dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txt_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bag_number"/>
+
+        <TextView
+            android:id="@+id/donation_details_fragment_tv_bag_number"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txt_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="ahmed hamdy"/>
+
+    </LinearLayout>
+    <include layout="@layout/view_space"/>
+
+    <LinearLayout
+        style="@style/DonationDetailsLinearLayout"
+
+        >
+        <TextView
+            android:layout_marginEnd="@dimen/dim_12dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txt_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/an_hospital"/>
+
+        <TextView
+            android:id="@+id/donation_details_fragment_tv_hospital"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txt_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="ahmed hamdy"/>
+
+    </LinearLayout>
+    <include layout="@layout/view_space"/>
+
+    <LinearLayout
+        style="@style/DonationDetailsLinearLayout"
+        android:orientation="vertical"
+
+
+        >
+        <TextView
+            android:layout_marginEnd="@dimen/dim_12dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txt_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hospital_address"/>
+
+        <TextView
+            android:id="@+id/donation_details_fragment_tv_hospital_address"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txt_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="ahmed hamdy"/>
+
+    </LinearLayout>
+    <include layout="@layout/view_space"/>
+
+    <LinearLayout
+        style="@style/DonationDetailsLinearLayout"
+
+        >
+        <TextView
+            android:layout_marginEnd="@dimen/dim_12dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txt_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"/>
+
+        <TextView
+            android:id="@+id/donation_details_fragment_tv_phone"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txt_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="ahmed hamdy"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="@dimen/dim_12dp"
+        android:background="@drawable/background_details"
+        android:padding="@dimen/dim_12dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_marginBottom="@dimen/dim_6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/details"/>
+
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:id="@+id/donation_details_fragment_tv_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/fake_txt" />
+    </LinearLayout>
+
+        <Button
+            android:background="@color/colorGreen"
+            android:id="@+id/donation_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/call_him"
+            android:textColor="@color/colorWhite"
+             />
+
+</LinearLayout>
+</ScrollView>

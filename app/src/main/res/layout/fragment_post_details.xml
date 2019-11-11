@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="0dp"
+    android:paddingTop="@dimen/dim_6dp"
+    android:paddingStart="@dimen/dim_6dp"
+    android:paddingEnd="@dimen/dim_6dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/post_details_fragment_iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_200dp"
+        android:src="@drawable/child"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_marginBottom="@dimen/dim_12dp"
+        android:foreground="?selectableItemBackground"
+        android:orientation="vertical"
+        android:padding="@dimen/dim_6dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/post_details_fragment_tv_title"
+                android:textAlignment="viewStart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                tools:text="طريقة الوقاية من الامراض" />
+
+            <ImageView
+
+                android:id="@+id/post_favourate"
+                android:foreground="?selectableItemBackground"
+                android:layout_width="@dimen/dim_20dp"
+                android:layout_height="@dimen/dim_20dp"
+                android:src="@drawable/ic_heart_light" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_2dp"
+            android:layout_marginBottom="@dimen/dim_6dp"
+            android:background="@color/colorPrimary" />
+        <TextView
+            android:id="@+id/post_details_fragment_tv_description"
+            android:textSize="@dimen/dim_16sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorAccent"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

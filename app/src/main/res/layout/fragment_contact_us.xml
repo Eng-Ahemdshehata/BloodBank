@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dim_18dp"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dim_12dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_call" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text=": 01064261149" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dim_16sp"
+                android:layout_height="@dimen/dim_16sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dim_12dp"
+                android:layout_marginEnd="@dimen/dim_12dp"
+                android:src="@drawable/ic_contact_us" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/e_mail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text=": starahmed458@yahoo.com" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_18dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dim_35dp"
+                android:layout_height="@dimen/dim_35dp"
+                android:layout_marginStart="@dimen/dim_12dp"
+                android:layout_marginEnd="@dimen/dim_12dp"
+                android:src="@drawable/ic_whats" />
+
+            <ImageView
+                android:layout_width="@dimen/dim_35dp"
+                android:layout_height="@dimen/dim_35dp"
+                android:layout_marginStart="@dimen/dim_12dp"
+                android:layout_marginEnd="@dimen/dim_12dp"
+                android:src="@drawable/ic_google" />
+
+            <ImageView
+                android:layout_width="@dimen/dim_35dp"
+                android:layout_height="@dimen/dim_35dp"
+                android:layout_marginStart="@dimen/dim_12dp"
+                android:layout_marginEnd="@dimen/dim_12dp"
+                android:src="@drawable/ic_youtube" />
+
+            <ImageView
+                android:layout_width="@dimen/dim_35dp"
+                android:layout_height="@dimen/dim_35dp"
+                android:layout_marginStart="@dimen/dim_12dp"
+                android:layout_marginEnd="@dimen/dim_12dp"
+                android:src="@drawable/ic_insta" />
+
+            <ImageView
+                android:layout_width="@dimen/dim_35dp"
+                android:layout_height="@dimen/dim_35dp"
+                android:layout_marginStart="@dimen/dim_12dp"
+                android:layout_marginEnd="@dimen/dim_12dp"
+                android:src="@drawable/ic_twitter" />
+
+            <ImageView
+                android:layout_width="@dimen/dim_35dp"
+                android:layout_height="@dimen/dim_35dp"
+                android:layout_marginStart="@dimen/dim_12dp"
+                android:layout_marginEnd="@dimen/dim_12dp"
+                android:src="@drawable/ic_facebook" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_18dp"
+            android:layout_marginBottom="@dimen/dim_18dp"
+            android:height="@dimen/dim_50dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="@string/contact_us"
+            android:textColor="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dim_12dp">
+
+
+
+            <EditText
+                android:id="@+id/contact_us_fragment_et_phone"
+                style="@style/LoginFragmentET"
+                android:hint="@string/phone_number"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/contact_us_fragment_et_title"
+                style="@style/LoginFragmentET"
+                android:hint="@string/your_message"
+                android:inputType="textAutoComplete" />
+
+            <EditText
+                android:id="@+id/contact_us_fragment_et_message"
+                style="@style/LoginFragmentET"
+                android:hint="@string/message_content"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/contact_us_fragment_et_name"
+                style="@style/LoginFragmentET"
+                android:hint="@string/name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/contact_us_fragment_et_mail"
+                style="@style/LoginFragmentET"
+                android:hint="@string/e_mail"
+                android:inputType="textEmailAddress" />
+
+
+            <Button
+                android:id="@+id/contact_us_fragment_btn_send"
+                style="@style/LoginFragmentBtn"
+                android:background="@color/colorAccent"
+                android:text="@string/send" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

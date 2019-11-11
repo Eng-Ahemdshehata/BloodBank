@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/ic_account"
+        android:title="@string/menu_account" />
+    <item
+        android:id="@+id/nav_notification"
+        android:icon="@drawable/ic_notification"
+        android:title="@string/menu_notification" />
+    <item
+        android:id="@+id/nav_heart"
+        android:icon="@drawable/ic_heart"
+        android:title="@string/menu_heart" />
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/menu_home" />
+    <item
+        android:id="@+id/nav_instructions"
+        android:icon="@drawable/ic_instructions"
+        android:title="@string/menu_instructions" />
+    <item
+        android:id="@+id/nav_contact_us"
+        android:icon="@drawable/ic_contact_us"
+        android:title="@string/menu_contact_us" />
+    <item
+        android:id="@+id/nav_about_app"
+        android:icon="@drawable/ic_about_app"
+        android:title="@string/menu_about_app" />
+    <item
+        android:id="@+id/nav_rate_app"
+        android:icon="@drawable/ic_rate_app"
+        android:title="@string/menu_rate_app" />
+    <item
+        android:id="@+id/nav_sign_out"
+        android:icon="@drawable/ic_quit"
+        android:title="@string/menu_quit" />
+</menu>
